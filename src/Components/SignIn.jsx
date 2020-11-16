@@ -20,7 +20,8 @@ const SignIn = () => {
         console.error("Error signing in with password and email ", error);
       });
       console.log(" SignIn - signInWithEmailAndPassword ");  
-      console.log(" const user :  " + user);      
+      console.log(" const user :  " + user);  
+      window.location.replace("https://rolando988.github.io/crud/");    
   };
 
   const onChangeHandler = (event) => {
@@ -65,12 +66,13 @@ const SignIn = () => {
                 onChange={(event) => onChangeHandler(event)} />
             </div>
 
-            <button type="submit" className="btn btn-primary btn-block"
+            <a href="https://www.youtube.com/"><button type="submit" className="btn btn-primary btn-block"
               onClick={(event) => { signInWithEmailAndPasswordHandler(event) }}
             ><i className="fa fa-lock"></i>  Ingresar</button>
+            </a>
             <p className="text-center my-3">
               {" "}
-              <Link to="signUp" className="text-blue-500 hover:text-blue-600">
+              <Link to="" className="text-blue-500 hover:text-blue-600">
                 No tiene cuenta ?
           </Link>{" "}
               <br />{" "}
